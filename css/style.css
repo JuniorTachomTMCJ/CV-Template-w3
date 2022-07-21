@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #f1f1f1;
+  color: #000;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 1.5rem;
+  max-width: 137rem;
+  margin: 0 auto;
+}
+
+.left {
+  background: white;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 0;
+}
+.left .title {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: #757575;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1.8rem;
+}
+.left .title i {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #009688;
+  margin-right: 2rem;
+}
+.left > *:not(.profile) {
+  padding: 1.5rem;
+}
+.left .profile {
+  position: relative;
+}
+.left .profile img {
+  width: 100%;
+}
+.left .profile p {
+  line-height: 4.5rem;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1.6rem;
+}
+.left .progress {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #fff;
+  width: 100%;
+  height: 2rem;
+  background: #f1f1f1;
+  text-align: center;
+  border-radius: 50rem;
+}
+.left .progress-bar {
+  background: #009688;
+  border-radius: 50rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left .contact {
+  border-bottom: 1px solid #eee;
+}
+.left .contact li {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #757575;
+  margin: 1.5rem 0;
+}
+.left .contact li i {
+  margin-right: 2rem;
+  font-size: 1.8rem;
+  color: #009688;
+}
+.left .skills .skill {
+  margin: 2rem 0;
+}
+.left .skills .skill__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: gray;
+  margin-bottom: 1.5rem;
+}
+.left .languages .title {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: #757575;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.left .languages .title i {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #009688;
+}
+.left .languages .language {
+  margin: 2rem 0;
+}
+.left .languages .language__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: gray;
+  margin-bottom: 2rem;
+}
+.left .languages .language .progress {
+  height: 2.5rem;
+}
+
+.right {
+  display: flex;
+  flex-flow: column;
+  gap: 1.6rem;
+}
+.right .title {
+  font-size: 3rem;
+  line-height: 4.5rem;
+  font-weight: normal;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 1.6rem 0;
+}
+.right .title i {
+  font-size: 36px;
+  line-height: 36px;
+  color: #009688;
+  margin-right: 2.5rem;
+}
+.right .work {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
+  padding: 1rem 1.6rem;
+}
+.right .card {
+  padding: 0 1.6rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 3.6rem;
+}
+.right .card-container {
+  display: flex;
+  flex-flow: column;
+}
+.right .card:last-child {
+  border: none;
+}
+.right .card__title {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 1rem auto;
+}
+.right .card__date {
+  display: flex;
+  align-items: center;
+  color: #009688;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  position: relative;
+}
+.right .card__date i {
+  color: #009688;
+  margin-right: 2rem;
+}
+.right .card__date p {
+  line-height: 2.4rem;
+}
+.right .card__date span {
+  line-height: 2.4rem;
+  color: #fff;
+  background: #009688;
+  padding: 0 0.8rem;
+  border-radius: 0.4rem;
+}
+.right .card__text {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  background: #009688;
+  padding: 1.6rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.footer ul i {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin: 0.25rem;
+}
+.footer ul i:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-flow: column;
+    padding: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
